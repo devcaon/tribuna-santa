@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .clip_path {
+    clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+  }
+
+  .dinamic_border {
+    position: relative;
+  }
+
+  .dinamic_border::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 4px;
+    width: 0;
+    left: 0;
+    top: 0;
+    transition: 0.6s;
+  }
+
+  .dinamic_border:hover::after {
+    width: 100%;
+  }
+}
