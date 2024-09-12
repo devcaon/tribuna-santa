@@ -1,10 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { BiCycling, BiMenu, BiShoppingBag } from "react-icons/bi";
-import { BsShop } from "react-icons/bs";
-import { FaMicroblog } from "react-icons/fa6";
-import { GrContact } from "react-icons/gr";
-import { HiHome } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 
 interface Props {
